@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Storyboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="storyboard">
+        <!-- State 1: Journey board collapsed -->
+        <div class="state state-1 active">
+            <header>
+                <h1>Technical Project Management</h1>
+                <p>Explore the world of management</p>
+                <button class="expand-board">Expand</button>
+            </header>
+            <main id="task-container">
+                <!-- Content blocks will be dynamically inserted here -->
+            </main>
+        </div>
+
+        <!-- State 2: Journey board expanded -->
+        <div class="state state-2">
+            <header>
+                <h1>Technical Project Management</h1>
+                <p>Explore the world of management</p>
+                <button class="collapse-board">Collapse</button>
+            </header>
+            <aside class="journey-board">
+                <h2>Journey Board</h2>
+                <ul id="task-list">
+                    <!-- Task list will be dynamically inserted here -->
+                </ul>
+            </aside>
+            <main id="task-container-expanded">
+                <!-- Content blocks will be dynamically inserted here -->
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

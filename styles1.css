@@ -1,0 +1,114 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.storyboard {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+button.expand-board,
+button.collapse-board {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.expand-board:hover,
+button.collapse-board:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content-block {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.content-block h2 {
+    margin-top: 0;
+}
+
+img, iframe {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.journey-board {
+    background: #f8f8f8;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+}
+
+.journey-board h2 {
+    margin-top: 0;
+}
+
+.journey-board ul {
+    list-style: none;
+    padding: 0;
+}
+
+.journey-board ul li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.description {
+    display: none;
+    padding: 10px 0;
+}
+
+.arrow {
+    cursor: pointer;
+    margin-left: 10px;
+}
